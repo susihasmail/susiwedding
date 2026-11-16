@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yusi &amp; Spencer — Order of Service</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Noto+Serif+SC:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#FAFAF8;--ink:#1F1D1A;--muted:#5C5751;--accent:#8A847B;--rule:#D9D6D0;--soft:#F1EEE8}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:'Cormorant Garamond',Georgia,serif;font-size:19px;line-height:1.5}
+.zh{font-family:'Noto Serif SC','Songti SC',serif;letter-spacing:.15em;color:var(--muted)}
+.script{font-family:'Pinyon Script','Brush Script MT',cursive;font-weight:400}
+.caps{text-transform:uppercase;letter-spacing:.22em;font-weight:600;font-size:13px}
+a{color:inherit}
+
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:rgba(250,250,248,.94);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
+nav ul{list-style:none;display:flex;justify-content:center;gap:2px;max-width:520px;margin:0 auto;padding:0 8px}
+nav a{display:block;padding:14px 10px;text-decoration:none;text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:600;color:var(--muted)}
+nav a.on{color:var(--ink);box-shadow:inset 0 -2px 0 var(--accent)}
+
+main{max-width:520px;margin:0 auto;padding:0 28px}
+section{padding:56px 0 48px;border-bottom:1px solid var(--rule)}
+section:last-of-type{border-bottom:none}
+h2{font-family:'Pinyon Script','Brush Script MT',cursive;font-weight:400;font-size:52px;line-height:1.1;text-align:center}
+.sub{text-align:center;margin-top:6px}
+.orn{display:flex;align-items:center;justify-content:center;gap:14px;margin:18px auto 30px}
+.orn i{display:block;width:64px;height:1px;background:var(--accent)}
+
+/* cover */
+.cover{text-align:center;padding:48px 0 52px}
+.cover .lead{color:var(--muted);margin-bottom:26px}
+.oval{position:relative;width:min(72vw,268px);aspect-ratio:252/318.5;margin:0 auto}
+.oval img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%}
+.oval::before,.oval::after{content:"";position:absolute;border-radius:50%;pointer-events:none}
+.oval::before{inset:-10px;border:1px solid var(--accent)}
+.oval::after{inset:-16px;border:1px solid var(--rule)}
+.names{font-size:clamp(42px,12.5vw,68px);line-height:1.15;margin-top:34px}
+.cover .tag{font-style:italic;color:var(--muted);font-size:20px;margin-top:6px}
+.cover .when{margin-top:22px;color:var(--ink)}
+.cover .when span{display:block;margin-top:6px}
+.hint{display:inline-block;margin-top:34px;color:var(--muted);text-decoration:none;font-size:13px;letter-spacing:.2em;text-transform:uppercase}
+.hint svg{display:block;margin:8px auto 0}
+
+/* order */
+ol.order{list-style:none;text-align:center;display:flex;flex-direction:column;gap:20px}
+ol.order .t{font-size:15px;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+ol.order .zh{font-size:14px;margin-top:2px}
+ol.order .d{font-style:italic;color:var(--muted);font-size:17px;margin-top:2px}
+ol.order .d .zh{white-space:nowrap}
+ol.order .d a{text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:3px}
+
+/* hymns */
+.hymn .verse{display:grid;grid-template-columns:26px 1fr;gap:0 6px;margin-bottom:18px}
+.hymn .lines span{display:block;padding-left:1.1em;text-indent:-1.1em}
+.hymn .n{font-weight:600;color:var(--accent);font-size:16px;padding-top:2px}
+.hymn .refrain{grid-column:2;font-style:italic;color:var(--muted);margin-top:8px;padding-left:12px;border-left:2px solid var(--rule)}
+.hymn .refrain b{font-style:normal;font-weight:600;font-size:12px;letter-spacing:.18em;text-transform:uppercase;display:block;color:var(--accent)}
+.label{text-align:center;margin-bottom:4px;color:var(--muted)}
+.hymn + .hymn{margin-top:8px}
+
+/* scripture */
+.ref{text-align:center;margin-bottom:16px}
+blockquote{text-align:center;font-size:23px;line-height:1.45;font-style:italic}
+blockquote.zh-q{font-style:normal;font-size:17px;line-height:1.9;margin-top:18px;letter-spacing:.08em}
+.prayer{margin-top:40px;text-align:center}
+.prayer h3{font-family:'Pinyon Script','Brush Script MT',cursive;font-weight:400;font-size:40px;margin-bottom:12px}
+.prayer p{font-size:20px;line-height:1.6}
+
+/* thanks */
+.thanks{display:flex;flex-direction:column;gap:30px;text-align:center}
+.thanks h3{font-size:14px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;margin-bottom:6px}
+.thanks p{font-size:20px}
+.thanks .v{font-style:italic}
+footer{text-align:center;padding:36px 0 56px;color:var(--muted)}
+footer .script{font-size:34px;color:var(--ink);display:block;margin-top:4px}
+</style>
+</head>
+<body>
+
+<nav aria-label="Sections">
+<ul>
+<li><a href="#order">Order</a></li>
+<li><a href="#hymns">Hymns</a></li>
+<li><a href="#scripture">Scripture</a></li>
+<li><a href="#thanks">Thank you</a></li>
+</ul>
+</nav>
+
+<main>
+
+<section class="cover" id="welcome">
+<p class="caps lead">Celebrate the union of</p>
+<div class="oval"><img src="photo.jpg" alt="Yusi and Spencer"></div>
+<h1 class="script names">Yusi &amp; Spencer</h1>
+<p class="tag">In the sacrament of holy matrimony</p>
+<p class="caps when">28th November 2026<span>Wesley Methodist Church</span></p>
+<a class="hint" href="#order">Order of service
+<svg width="16" height="10" viewBox="0 0 16 10" aria-hidden="true"><path d="M1 1l7 7 7-7" fill="none" stroke="#8A847B" stroke-width="1.5"/></svg></a>
+</section>
+
+<section id="order">
+<h2>Order of Service</h2>
+<div class="orn" aria-hidden="true"><i></i><svg width="14" height="14" viewBox="0 0 24 24"><g fill="#8A847B"><circle cx="12" cy="4.7" r="3.5"/><circle cx="12" cy="19.3" r="3.5"/><circle cx="4.7" cy="12" r="3.5"/><circle cx="19.3" cy="12" r="3.5"/></g></svg><i></i></div>
+<ol class="order">
+<li><p class="t">Processional</p><p class="zh">入场仪式</p></li>
+<li><p class="t">Hymn of Praise</p><p class="zh">赞美诗</p>
+<p class="d"><a href="#trust-and-obey">Trust and Obey</a> · <span class="zh">信靠顺服</span></p>
+<p class="d"><a href="#holy-holy-holy">Holy, Holy, Holy, Lord God Almighty</a> · <span class="zh">圣哉！圣哉！圣哉！</span></p></li>
+<li><p class="t">Scripture Reading</p><p class="zh">证道</p><p class="d"><a href="#scripture">Psalm 73:26</a> · <span class="zh">诗篇 73:26</span></p></li>
+<li><p class="t">Exhortation</p><p class="zh">劝勉</p></li>
+<li><p class="t">Solemnisation of Marriage</p><p class="zh">婚礼仪式</p></li>
+<li><p class="t">Signing of the Marriage Certificate</p><p class="zh">签署结婚证书</p></li>
+<li><p class="t">Benediction</p><p class="zh">祝福</p></li>
+<li><p class="t">Recessional</p><p class="zh">退场仪式</p></li>
+<li><p class="t">Photo Taking</p><p class="zh">合照留念</p></li>
+</ol>
+</section>
+
+<section id="hymns">
+<h2>Hymns of Praise</h2>
+<p class="sub zh">赞美诗</p>
+<div class="orn" aria-hidden="true"><i></i><svg width="14" height="14" viewBox="0 0 24 24"><g fill="#8A847B"><circle cx="12" cy="4.7" r="3.5"/><circle cx="12" cy="19.3" r="3.5"/><circle cx="4.7" cy="12" r="3.5"/><circle cx="19.3" cy="12" r="3.5"/></g></svg><i></i></div>
+
+<div class="hymn" id="trust-and-obey">
+<p class="caps label">Trust and Obey · <span class="zh">信靠顺服</span></p>
+<div class="orn" aria-hidden="true" style="margin:10px auto 22px"><i style="width:32px"></i></div>
+<div class="verse"><span class="n">1</span><p class="lines"><span>When we walk with the Lord</span><span>in the light of his word,</span><span>what a glory he sheds on our way!</span><span>While we do his good will,</span><span>he abides with us still,</span><span>and with all who will trust and obey.</span></p>
+<p class="refrain"><b>Refrain</b>Trust and obey, for there’s no other way<br>to be happy in Jesus, but to trust and obey.</p></div>
+<div class="verse"><span class="n">2</span><p class="lines"><span>Not a burden we bear,</span><span>not a sorrow we share,</span><span>but our toil he doth richly repay;</span><span>not a grief or a loss,</span><span>not a frown or a cross,</span><span>but is blest if we trust and obey.</span></p>
+<p class="refrain"><b>Refrain</b>Trust and obey, for there’s no other way<br>to be happy in Jesus, but to trust and obey.</p></div>
+<div class="verse"><span class="n">3</span><p class="lines"><span>But we never can prove</span><span>the delights of his love</span><span>until all on the altar we lay;</span><span>for the favor he shows,</span><span>for the joy he bestows,</span><span>are for them who will trust and obey.</span></p>
+<p class="refrain"><b>Refrain</b>Trust and obey, for there’s no other way<br>to be happy in Jesus, but to trust and obey.</p></div>
+<div class="verse"><span class="n">4</span><p class="lines"><span>Then in fellowship sweet</span><span>we will sit at his feet,</span><span>or we’ll walk by his side in the way;</span><span>what he says we will do,</span><span>where he sends we will go;</span><span>never fear, only trust and obey.</span></p>
+<p class="refrain"><b>Refrain</b>Trust and obey, for there’s no other way<br>to be happy in Jesus, but to trust and obey.</p></div>
+</div>
+
+<div class="hymn" id="holy-holy-holy">
+<p class="caps label" style="margin-top:28px">Holy, Holy, Holy, Lord God Almighty</p>
+<p class="label zh" style="font-size:14px">圣哉！圣哉！圣哉！</p>
+<div class="orn" aria-hidden="true" style="margin:10px auto 22px"><i style="width:32px"></i></div>
+<div class="verse"><span class="n">1</span><p class="lines"><span>Holy, holy, holy! Lord God Almighty!</span><span>Early in the morning our song shall rise to thee.</span><span>Holy, holy, holy! Merciful and mighty,</span><span>God in three persons, blessed Trinity!</span></p></div>
+<div class="verse"><span class="n">2</span><p class="lines"><span>Holy, holy, holy! All the saints adore thee,</span><span>casting down their golden crowns around the glassy sea;</span><span>cherubim and seraphim falling down before thee,</span><span>which wert, and art, and evermore shalt be.</span></p></div>
+<div class="verse"><span class="n">3</span><p class="lines"><span>Holy, holy, holy! Though the darkness hide thee,</span><span>though the eye of sinful man thy glory may not see,</span><span>only thou art holy; there is none beside thee,</span><span>perfect in power, in love and purity.</span></p></div>
+<div class="verse"><span class="n">4</span><p class="lines"><span>Holy, holy, holy! Lord God Almighty!</span><span>All thy works shall praise thy name, in earth and sky and sea.</span><span>Holy, holy, holy! Merciful and mighty,</span><span>God in three persons, blessed Trinity.</span></p></div>
+</div>
+</section>
+
+<section id="scripture">
+<h2>Scripture Reading</h2>
+<p class="sub zh">圣经通读</p>
+<div class="orn" aria-hidden="true"><i></i><svg width="14" height="14" viewBox="0 0 24 24"><g fill="#8A847B"><circle cx="12" cy="4.7" r="3.5"/><circle cx="12" cy="19.3" r="3.5"/><circle cx="4.7" cy="12" r="3.5"/><circle cx="19.3" cy="12" r="3.5"/></g></svg><i></i></div>
+<p class="caps ref">Psalm 73:26 · <span class="zh">诗篇 73:26</span></p>
+<blockquote>My flesh and my heart may fail,<br>but God is the strength of my heart<br>and my portion forever.</blockquote>
+<blockquote class="zh zh-q">我的肉体和我的心肠衰残；<br>但神是我心里的力量，<br>又是我的福分，直到永远。</blockquote>
+<div class="prayer">
+<h3>The Lord’s Prayer</h3>
+<p>Our Father who art in heaven, hallowed be thy name.<br>Thy kingdom come,<br>thy will be done on earth as it is in heaven.<br>Give us this day our daily bread,<br>and forgive us our trespasses,<br>as we forgive those who trespass against us.<br>And lead us not into temptation,<br>but deliver us from evil.<br>For thine is the kingdom, the power, and the glory,<br>forever and ever. Amen.</p>
+</div>
+</section>
+
+<section id="thanks">
+<h2>Thank you</h2>
+<div class="orn" aria-hidden="true"><i></i><svg width="14" height="14" viewBox="0 0 24 24"><g fill="#8A847B"><circle cx="12" cy="4.7" r="3.5"/><circle cx="12" cy="19.3" r="3.5"/><circle cx="4.7" cy="12" r="3.5"/><circle cx="19.3" cy="12" r="3.5"/></g></svg><i></i></div>
+<div class="thanks">
+<div><h3>Our God, Jesus Christ</h3><p class="v">No one has ever seen God; but if we love one another, God lives in us and his love is made complete in us.</p><p class="caps" style="margin-top:6px;color:var(--muted)">1 John 4:12</p></div>
+<div><h3>Pastor Ian Lee</h3><p>For walking alongside us through this marriage journey.</p></div>
+<div><h3>Our Families</h3><p>For your unconditional love and support all these years.</p></div>
+<div><h3>Our Friends</h3><p>For sharing in our joy — we are grateful for your love and thank all of you for joining us today.</p></div>
+</div>
+</section>
+
+</main>
+
+<footer>With love,<span class="script">Yusi &amp; Spencer</span></footer>
+
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('nav a'));
+  var ids=links.map(function(a){return a.getAttribute('href').slice(1)});
+  function mark(){
+    var y=window.scrollY+90, cur=null;
+    ids.forEach(function(id){var el=document.getElementById(id); if(el && el.offsetTop<=y) cur=id;});
+    links.forEach(function(a){a.classList.toggle('on', a.getAttribute('href')==='#'+cur);});
+  }
+  window.addEventListener('scroll',mark,{passive:true}); mark();
+})();
+</script>
+</body>
+</html>
